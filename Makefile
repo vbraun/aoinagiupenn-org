@@ -1,12 +1,11 @@
 REPO_ROOT:=$(shell git rev-parse --show-toplevel)
 TOOL:=$(REPO_ROOT)/tools/run_tool
 
-SSH_HOST=localhost
+SSH_HOST=sagepad.org
 SSH_PORT=22
 SSH_USER=vbraun
-SSH_TARGET_DIR=/var/www
+SSH_TARGET_DIR=/var/www/aoinagiupenn_org
 
-GITHUB_PAGES_BRANCH=gh-pages
 
 ifndef PORT
     PORT:=5500
@@ -40,13 +39,9 @@ devserver:
 	$(TOOL) dev_server.py $(PORT)
 
 publish:
-	$(PELICAN) -s publishconf.py
+	$(TOOL) pelican -s publishconf.py
 
 ssh_upload: publish
-	scp -P $(SSH_PORT) -r $(OUTPUTDIR)/* $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR)
-
-github: publish
-	ghp-import -m "Generate Pelican site" -b $(GITHUB_PAGES_BRANCH) $(OUTPUTDIR)
-	git push origin $(GITHUB_PAGES_BRANCH)
+	scp -P $(SSH_PORT) -rp output/* $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR)
 
 .PHONY: html scss help clean serve devserver publish ssh_upload github
