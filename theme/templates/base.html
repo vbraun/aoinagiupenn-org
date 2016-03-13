@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="{{ DEFAULT_LANG }}">
+    <head>
+        {% block head %}
+        <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+        <meta charset="utf-8" />
+        {% endblock head %}
+        <link rel="icon" href="favicon.png" />
+	<link rel="stylesheet" type="text/css" media="screen" href="/theme/css/main.css" />
+    </head>
+
+    <body id="index" class="home">
+        <header id="banner" class="body">
+            <!-- head -->
+            <div id="head">    
+                <div id="headfootnote">
+                    <a href="http://www.shofuso.com"><img src="/theme/images/japanese-house.png" alt="Japanese House, Fairmount park, Philadelphia" width="231" height="17" /></a>
+                </div>
+                <div id="headlogo">
+                    <a href="http://www.aoinagikenshukai.org"><img src="/theme/images/logo.png" alt="Aoinagi Logo" width="319" height="320" /></a>
+                </div>  
+                <div id="headtext">
+                    <a href="http://www.aoinagiupenn.org"><img src="/theme/images/header-text.png" alt="Aoinagi Karate at UPenn" width="447" height="154" /></a>
+                </div>
+            </div>
+        </header><!-- /#banner -->
+
+        <div id="container">
+            {% include 'sidebar.html' %}
+
+            <div id="content">
+                <div class="newsitem">
+                    {% block content %}
+                    {% endblock %}
+                </div>
+                <footer class="divider">
+                    <img src="/theme/images/vignette.png">
+                </footer><!-- /#contentinfo -->
+            </div>
+
+        </div>
+        
+        <footer id="contentinfo" class="body">
+        </footer><!-- /#contentinfo -->
+    </body>
+</html>

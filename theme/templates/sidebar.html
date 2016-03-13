@@ -1,0 +1,19 @@
+<nav id="sidebar">
+    <div class="sidebaritemnopad"></div>
+
+    {% for p in PAGES %}
+    <div class="sidebaritem">
+        <a href="{{ SITEURL }}/{{ p.url }}">{{ p.menutitle }}</a>
+    </div>
+    {% endfor %}
+
+    <div class="sidebaritem">
+        <a href="http://www.aoinagikenshukai.org" title="Aoinagi Ken Shu Kai">Aoinagi Ken Shu Kai</a><br />
+    </div><div class="sidebaritem">
+        <a href="http://www.upenn.edu/recreation/fitness-wellness/instructional-classes/martial-arts/"
+           title="Martial arts at the University of Pennsylvania">PennRec</a><br />
+    </div>
+
+</nav>
+
+

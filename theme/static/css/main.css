@@ -1,0 +1,314 @@
+.float-right
+{
+    float: right;
+}
+
+.float-left
+{
+    float: left;
+}
+
+.clearfloats
+{
+    height: 0;
+    clear: both;
+}
+
+.sidebaritem, .sidebaritemnopad {
+    border-bottom-style: groove; 
+    border-bottom-color:  #ffad00; 
+    border-bottom-width: 2px;
+}
+
+.sidebaritem
+{
+    padding: 5px 5px;
+}
+
+#sidebar p
+{
+    margin: 0;
+    padding: 5px 5px;
+    font-size: 0.8em;
+    /*	line-height: 2em;  */
+}
+
+#sidebar img
+{
+    vertical-align:middle;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: #000;
+    background-color: #99cc99;
+}
+
+blockquote, h3, p, li {
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 0.9em;
+    line-height: 1.6em;
+}
+
+blockquote {
+    margin-right: 0;
+    margin-left: 20px;
+}
+
+h1, h2, h3 {
+    margin: 0 0 15px 0;
+    padding: 0 10px;
+    font-weight: normal;
+}
+
+h1, h2 {
+    font-family: serif;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.4em;
+}
+
+hr {
+    margin: 2em auto;
+    width: 370px;
+    height: 1px;
+    color: #7a7e7d;
+    background-color: #7a7e7d;
+    border: none;
+}
+
+small, .small {
+    font-size: 0.9em;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    border-bottom: 1px #000 solid;
+}
+
+a img {
+    border: none;
+}
+
+h1 a, h2 a, h3 a {
+    /*	border: none;   */
+}
+
+h3 a {
+    font-size: 1.5em;
+    font-family: serif;
+}
+
+#site-name a {
+    border: none;
+}
+
+#sidebar a {
+    color: #ffad00;
+    border: none;
+}
+
+#accessibility {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: -10000px;
+}
+
+#container {
+    margin: 10px auto;
+    padding: 10px;
+    width: 760px;
+    width: 770px;
+    /*	background-color: #220000;  */
+}
+
+#head {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    height: 289px;
+    background-image: url(/theme/images/garden-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-color: #203a1d;
+    border-bottom-style: groove; 
+    border-bottom-color:  #ffad00; 
+    border-bottom-width: 4px;
+}
+
+#head a {
+    border: none;
+}
+
+#headlogo {
+    position:absolute;
+    top:0;
+    right:0;
+}
+
+#headtext
+{
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+#headfootnote
+{
+    position:absolute;
+    bottom: 0px;
+    left: 3px;
+}
+
+#site-name
+{
+    margin: 15px 0;
+    font: 3em serif;
+}
+
+#site-slogan
+{
+    font: italic 1em serif;
+}
+
+#sidebar
+{
+    margin-top: 20px;
+    width: 150px;
+    /*	margin-left: 5px;  */
+    float: right;
+    text-align: center;
+    background-color: #203a1d;
+    /*        font-weight: bold; */
+    font-style: italic;
+    font-family: serif;
+    color: #ffad00;
+    font-size: 1.4em;
+}
+
+.section_list
+{
+    margin: 0 0 10px 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.section_list li
+{
+    margin: 0 0 3px 0;
+    padding: 0;
+}
+
+#content
+{
+    width: 580px;
+    margin: 0;
+    padding: 0;
+    /*	background-color: #990000;   */
+}
+
+#staticpage
+{
+    width: 560px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #203a1d;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.newsitem
+{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #203a1d;
+    padding: 10px;
+    background-color: #fff;
+}
+
+#foot
+{
+    margin-top: 5px;
+    clear: both;
+    text-align: center;
+    background-color: #203a1d;
+}
+
+.caps
+{
+    font-size: 0.9em;
+    letter-spacing: 0.1em;
+}
+
+.divider
+{
+    margin: 1em 0;
+    text-align: center;
+}
+
+.directory
+{
+    list-style-type: circle;
+}
+
+.author
+{
+    font-family: normal;
+    font-size: 0.8em;
+}
+
+.published
+{
+    color: #aaa;
+    font-size: 0.7em;
+}
+
+.comments_error
+{
+    color: #000;
+    background-color: #fff4f4;
+}
+
+ul.comments_error
+{
+    padding: 0.3em;
+    list-style-type: circle;
+    list-style-position: inside;
+    border: 2px solid #fdd;
+}
+
+div#cpreview
+{
+    color: #000;
+    background-color: #f1f1f1;
+    border: 2px solid #ddd;
+}
+
+form#txpCommentInputForm td
+{
+    vertical-align: top;
+}
+
+#comments-help
+{
+    margin: 2px 0 15px 0;
+    font-size: 0.7em;
+}
+
+.error-status
+{
+    font: 1.3em serif;
+    color: red;
+}
